@@ -1,11 +1,17 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { BsLink } from "react-icons/bs";
 
 export default function Project({ id, title, description, tags, url, imageUrl }) {
 
 	return (
-		<div className="group max-w-none lg:max-w-[80%] xl:max-w-[90%] mb-3 sm:mb-8 last:mb-0">
+		<motion.div className="group max-w-none lg:max-w-[80%] xl:max-w-[90%] mb-3 sm:mb-8 last:mb-0"
+			key={id}
+			variants={{
+				hidden: { y: 20, opacity: 0 },
+				visible: { y: 0, opacity: 1 }
+			}}>
 			<section className="bg-gray-100 border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative h-auto lg:h-[20rem]  hover:bg-gray-200">
 				<div className="pt-4 pb-6 px-5 sm:pl-8 sm:pr-2 sm:pt-8 md:max-w-[60%] xl:max-w-[50%] flex flex-col h-full">
 					<h3 className="text-2xl font-semibold">{title}</h3>
@@ -27,6 +33,6 @@ export default function Project({ id, title, description, tags, url, imageUrl })
 					<span className="md:hidden px-5 pb-5 flex gap-2 items-center underline"><BsLink />See proyect</span>
 				</a>
 			</section>
-		</div>
+		</motion.div>
 	)
 }

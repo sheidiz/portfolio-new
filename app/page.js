@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <MainContainer>
       <motion.section className="flex flex-col"
-        initial={{ opacity: 0, y: 100 }}
+        initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}>
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-2 md:gap-5">
           <Image className="w-48 rounded-full object-cover border-4 border-white bg-gray-200"
