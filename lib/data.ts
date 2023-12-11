@@ -12,7 +12,8 @@ export const skillsData = [
 	"Git + GitHub",
 	"Bootstrap",
 	"Java",
-	"React.js",
+	"Maven",
+	"React",
 	"Tailwind",
 	"Responsive Design",
 ] as const;
