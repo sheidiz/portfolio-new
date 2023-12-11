@@ -1,9 +1,12 @@
-import React from 'react';
+"use client";
+
+import React from "react";
+import { motion } from "framer-motion"
 import TimelineItem from "./timeline-item";
 
 export default function Timeline({title, content}) {
   return (
-    <div className="grid gap-4 mx-4 sm:grid-cols-12">
+    <motion.div className="grid gap-4 mx-4 sm:grid-cols-12" initial={{opacity:0, y:-100}} animate={{opacity:1, y:0}}>
       <div className="col-span-12 sm:col-span-3">
         <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-indigo-800">
           <h3 className="text-3xl font-semibold">{title}</h3>
@@ -22,6 +25,6 @@ export default function Timeline({title, content}) {
           }
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
