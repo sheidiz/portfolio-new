@@ -1,15 +1,14 @@
 "use client";
 
-import MainContainer from "@/components/main-container";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import MainContainer from "@/components/main-container";
 import ProfilePic from "@/public/images/pic.png";
 import ArgFlag from "@/public/images/argentina-flag-icon.png";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-
+import { skillsData } from "@/lib/data";
 
 export default function Home() {
 
@@ -57,16 +56,29 @@ export default function Home() {
         </div>
       </motion.section>
       <motion.section className="flex flex-col gap-2 mt-5 leading-7"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}>
         <p className="text-xl font-bold text-indigo-800">More about me</p>
-        <p>
-          My journey into IT began at the university, where I learned the fundamentals of programming and web development. Currently, I'm enrolled in an online <span className='font-semibold'>full-stack Java developer bootcamp</span>, while independently studying other technologies such as <span className='font-semibold'>React</span> and <span className='font-semibold'>Tailwind</span>.
+        <p>My journey into IT began at the university, where I learned the fundamentals of programming and web development. Currently, I'm enrolled in an online
+          <span className='font-semibold'> full-stack Java developer bootcamp</span>
+          , while independently studying other technologies such as
+          <span className='font-semibold'> React</span> and
+          <span className='font-semibold'> Tailwind</span>.
         </p>
-        <p>
-          My professional goal is to grow and excel as a developer, bringing value and satisfaction to each project. Motivated by my <span className='underline'>curiosity</span> and a passion for <span className='underline'>problem-solving</span>, I am committed to constantly acquiring new knowledge. This, combined with my creativity, fuels my dedication to building innovative solutions that help people.
+        <p>My professional goal is to grow and excel as a developer, bringing value and satisfaction to each project. Motivated by my {" "}
+          <span className='underline'>curiosity</span> and a passion for{" "}
+          <span className='underline'>problem-solving</span>
+          , I am committed to constantly acquiring new knowledge. This, combined with my creativity, fuels my dedication to building innovative solutions that help people.
         </p>
         <p>I am currently looking for my <span className='font-semibold'>first job</span> as a software developer.</p>
+      </motion.section>
+      <motion.section className="flex flex-col gap-3 mt-5 leading-7">
+        <p className="text-xl font-bold text-indigo-800">Skills</p>
+        <div className="flex flex-row grow flex-wrap gap-2">
+          {skillsData.map((skill, index) => {
+            return <p key={index} className="rounded-full border px-3 py-1">{skill}</p>
+          })}
+        </div>
       </motion.section>
     </MainContainer>
   )
