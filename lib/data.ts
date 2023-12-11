@@ -1,5 +1,8 @@
+import React from "react";
 import wikiNookImg from "@/public/images/wikinook.png";
 import proyectoGCImg from "@/public/images/proyectoGC.png";
+import { LuBookOpen } from "react-icons/lu";
+import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
 	{ name: "Home", path: "/", },
@@ -39,5 +42,28 @@ export const projectsData = [
 		tags: ["HTML", "CSS", "Bootstrap", "Slick Slider"],
 		imageUrl: proyectoGCImg,
 		url: "https://sheidiz.github.io/bootcamp-java-universidad-2023-integrador-fase1/index.html",
+	},
+] as const;
+
+export const universityData = [
+	{
+		title: "Java Developer Bootcamp",
+		institution: "Educacion IT",
+		description: [
+			{ title: "General Skills:", skills: "Git, GitHub, Databases, Web Development, Responsive Design" },
+			{ title: "Languages and Technologies:", skills: "HTML, CSS, Bootstrap, MySQL, Java, Maven" }
+		],
+		icon: React.createElement(LuBookOpen),
+		date: "June 2023 - Present",
+	},
+	{
+		title: "Tecnicatura Universitaria en Programación",
+		institution: "Universidad Tecnologica Nacional",
+		description: [
+			{ title: "General Skills:", skills: "System Architecture, Databases, Introduction to Programming, Object-Oriented Programming, Databases, Web Development" },
+			{ title: "Languages and Technologies:", skills: "C++, C#, .NET, HTML, CSS, Bootstrap, MySQL" }
+		],
+		icon: React.createElement(LuGraduationCap),
+		date: "2018 - 2019",
 	},
 ] as const;
