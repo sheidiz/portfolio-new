@@ -17,7 +17,6 @@ export default function Home() {
       <motion.section className="flex flex-col"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}>
-
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-2 md:gap-5">
           <Image className="w-48 rounded-full object-cover border-4 border-white bg-gray-200"
             src={ProfilePic}
@@ -58,7 +57,7 @@ export default function Home() {
       <motion.section className="flex flex-col gap-2 mt-5 leading-7"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}>
-        <p className="text-xl font-bold text-indigo-800">About me</p>
+        <p className="text-2xl font-bold text-indigo-800">About me</p>
         <p>My journey into IT began at the university, where I learned the fundamentals of programming and web development. Currently, I'm enrolled in an online
           <span className='font-semibold'> full-stack Java developer bootcamp</span>
           , while independently studying other technologies such as
@@ -75,7 +74,7 @@ export default function Home() {
       <motion.section className="flex flex-col gap-3 mt-5 leading-7"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}>
-        <p className="text-xl font-bold text-indigo-800">Skills</p>
+        <p className="text-2xl font-bold text-indigo-800">Skills</p>
         <div className="flex flex-row grow flex-wrap gap-3">
           {skillsData.map((skill, index) => {
             return <p key={index} className="rounded-full border px-3 py-1">{skill}</p>
