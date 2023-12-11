@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import MainContainer from "@/components/main-container";
-import ProfilePic from "@/public/images/pic.png";
+import ProfilePic from "@/public/images/profile-pic.png";
 import ArgFlag from "@/public/images/argentina-flag-icon.png";
 import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -19,7 +19,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}>
 
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-2 md:gap-5">
-          <Image className="w-48 rounded-full object-cover border-4 border-white"
+          <Image className="w-48 rounded-full object-cover border-4 border-white bg-gray-200"
             src={ProfilePic}
             alt="Sheila"
             priority={true} />
