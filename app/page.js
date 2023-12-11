@@ -19,26 +19,26 @@ export default function Home() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}>
 
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-2 md:gap-5">
           <Image className="w-48 rounded-full object-cover border-4 border-white"
             src={ProfilePic}
             alt="Sheila"
             priority={true} />
-          <div className="text-start text-indigo-950 !leading-[1.5]">
+          <div className="text-center lg:text-start text-indigo-950 !leading-[1.5]">
             <h1 className="mb-1 text-4xl font-extrabold">
               Sheila Abril Diz
               <Image className="inline-block h-6 w-auto ps-4 pb-1" src={ArgFlag} alt="Argentina" priority={true} />
             </h1>
             <h2 className="text-lg"><span className="font-extrabold">Java Full-stack developer</span> in progress 👩‍💻</h2>
-            <p className="text-md w-2/3">
+            <p className="text-md w-full xl:w-2/3">
               I'm motivated to learn and create solutions for everyday issues, while also providing diverse digital experiences.
               My focus is <span className="underline">Java</span> and <span className="underline">React</span>.</p>
-            <motion.div id="links" className="mt-5 flex flex-col md:flex-row justify-center md:justify-start gap-2 text-md font-medium"
+            <motion.div id="links" className="mt-5 flex flex-col lg:flex-row justify-center lg:justify-start gap-2 text-md font-medium"
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, }}
             >
-              <div className="flex flex-row gap-2 text-gray-700 text-sm">
+              <div className="flex flex-row justify-center lg:justify-start gap-2 text-gray-700 text-sm">
                 <a className="bg-white p-3 flex items-center gap-2 rounded-full cursor-pointer border border-black/10 outline-none hover:scale-[1.15] focus:scale-[1.15] active:scale-105 transition"
                   href="https://www.linkedin.com/in/sheila-abril-diz-308148191/" target="_blank">
                   <BsLinkedin />
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
         </div>
       </motion.section>
-      <motion.section className="mt-5"
+      <motion.section className="flex flex-col gap-2 mt-5 leading-7"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}>
         <p className="text-xl font-bold text-indigo-800">More about me</p>
