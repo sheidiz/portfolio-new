@@ -29,7 +29,7 @@ export default function Home() {
             </h1>
             <h2 className="text-lg"><span className="font-extrabold">Java Full-stack developer</span> in progress 👩‍💻</h2>
             <p className="text-md w-full xl:w-2/3">
-              I'm motivated to learn and create solutions for everyday issues, while also providing diverse digital experiences.
+              {`I'm motivated to learn and create solutions for everyday issues, while also providing diverse digital experiences.`}
               My focus is <span className="underline">Java</span> and <span className="underline">React</span>.</p>
             <motion.div id="links" className="mt-5 flex flex-col lg:flex-row justify-center lg:justify-start gap-2 text-md font-medium"
               initial={{ opacity: 0, y: 100 }}
@@ -58,7 +58,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}>
         <p className="text-2xl font-bold text-indigo-800">About me</p>
-        <p>My journey into IT began at the university, where I learned the fundamentals of programming and web development. Currently, I'm enrolled in an online
+        <p>{`My journey into IT began at the university, where I learned the fundamentals of programming and web development. Currently, I'm enrolled in an online`}
           <span className='font-semibold'> full-stack Java developer bootcamp</span>
           , while independently studying other technologies such as
           <span className='font-semibold'> React</span> and
