@@ -36,7 +36,7 @@ export const projectsData = [
 		title: "Proyecto GC",
 		description:
 			"Responsive web app about the 'Proyecto Gonzáles Catán'. It shows information about the organization, such as activities, how to contribute and how to enroll.",
-		tags: ["HTML", "CSS", "Bootstrap", "Slider"],
+		tags: ["HTML", "CSS", "Bootstrap", "Slick Slider"],
 		imageUrl: proyectoGCImg,
 		url: "https://sheidiz.github.io/bootcamp-java-universidad-2023-integrador-fase1/index.html",
 	},
