@@ -72,7 +72,9 @@ export default function Home() {
         </p>
         <p>I am currently looking for my <span className='font-semibold'>first job</span> as a software developer.</p>
       </motion.section>
-      <motion.section className="flex flex-col gap-3 mt-5 leading-7">
+      <motion.section className="flex flex-col gap-3 mt-5 leading-7"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}>
         <p className="text-xl font-bold text-indigo-800">Skills</p>
         <div className="flex flex-row grow flex-wrap gap-2">
           {skillsData.map((skill, index) => {
