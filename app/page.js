@@ -46,7 +46,7 @@ export default function Home() {
                   <FaGithubSquare />
                 </a>
                 <a className="bg-white px-6 py-1 flex items-center gap-2 rounded-full cursor-pointer border border-black/10 outline-none hover:scale-110 focus:scale-110 active:scale-105 transition"
-                  href="/Diz Sheila - CV.pdf" download>
+                  href="/public/CV - Diz Sheila [EN].pdf" download>
                   Download CV <HiDownload />
                 </a>
               </div>
