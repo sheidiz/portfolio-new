@@ -30,7 +30,7 @@ export default function Project({ id, title, description, tags, url, imageUrl })
 						className="hidden md:block absolute top-20 lg:top-10 -right-20 lg:-right-40 xl:-right-20 w-[20rem] lg:w-[28.25rem] rounded-t-lg shadow-2xl transition 
 							group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-2"
 					/>
-					<span className="md:hidden px-5 pb-5 flex gap-2 items-center underline"><BsLink />See proyect</span>
+					<span className="md:hidden px-5 pb-5 flex gap-2 items-center underline"><BsLink />See project</span>
 				</a>
 			</section>
 		</motion.div>
