@@ -45,7 +45,7 @@ export const projectsData = [
 	},
 ] as const;
 
-export const universityData = [
+export const formationData = [
 	{
 		title: "Java Developer Bootcamp",
 		institution: "Educacion IT",
@@ -65,5 +65,17 @@ export const universityData = [
 		],
 		icon: React.createElement(LuGraduationCap),
 		date: "2018 - 2019",
+	},
+] as const;
+export const coursesData = [
+	{
+		title: "Programa de Inglés como Lengua Extranjera - Inglés - Nivel 11",
+		institution: "Universidad de Buenos Aires",
+		description: [
+			{ title: "Focus:", skills: "Learning of English as a foreign language" },
+			{ title: "About:", skills: "64-hour course. Integrates the upper intermediate stage of the English as a Foreign Language Program –Resolution (CD) No 2080/1990 and RESCD-2022-67-E-UBA-DCT#FFYL–, equivalent to level B2 of the Common European Framework of Reference (CEFR)." }
+		],
+		icon: React.createElement(LuGraduationCap),
+		date: "August 2022 - December 2022",
 	},
 ] as const;
