@@ -28,8 +28,8 @@ export default function Home() {
               <Image className="inline-block h-6 w-auto ps-4 pb-1" src={ArgFlag} alt="Argentina" priority={true} />
             </h1>
             <h2 className="text-lg"><span className="font-extrabold">Java Full-stack developer</span> in progress 👩‍💻</h2>
-            <p className="text-md w-full xl:w-2/3">
-              {`I'm motivated to learn and create solutions for everyday issues, while also providing diverse digital experiences.`}
+            <p className="text-md w-full xl:w-4/5">
+              {`I'm motivated to learn and create solutions for everyday issues, while also providing diverse digital experiences. `}
               My focus is <span className="underline">Java</span> and <span className="underline">React</span>.</p>
             <motion.div id="links" className="mt-5 flex flex-col lg:flex-row justify-center lg:justify-start gap-2 text-md font-medium"
               initial={{ opacity: 0, y: 100 }}
@@ -77,7 +77,7 @@ export default function Home() {
         <p className="text-2xl font-bold text-indigo-800">Skills</p>
         <div className="flex flex-row grow flex-wrap gap-3">
           {skillsData.map((skill, index) => {
-            return <p key={index} className="rounded-full border px-3 py-1">{skill}</p>
+            return <p key={index} className="rounded-full bg-indigo-100 px-3 py-1">{skill}</p>
           })}
         </div>
       </motion.section>
