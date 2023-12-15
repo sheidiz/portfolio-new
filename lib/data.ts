@@ -30,7 +30,7 @@ export const projectsData = [
 		title: "WikiNook",
 		description:
 			"My first React App of the Animal Crossing game, powered by the Nookipedia API. Features filtering, search, and pagination for enhanced user experience.",
-		tags: ["React", "Bootstrap", "React Paginate", "React Router"],
+		tags: ["React", "Next.js", "React Paginate", "Tailwind", "Framer Motion", "Fetch API"],
 		imageUrl: wikiNookImg,
 		url: "https://wikinook.vercel.app/",
 	},
